@@ -1,3 +1,4 @@
+
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
@@ -436,12 +437,12 @@ a:hover {
   width: 35px;
 }
 
-.navbar-b.navbar-trans .show>.nav-link:before,
-.navbar-b.navbar-trans .active>.nav-link:before,
+.navbar-b.navbar-trans .show > .nav-link:before,
+.navbar-b.navbar-trans .active > .nav-link:before,
 .navbar-b.navbar-trans .nav-link.show:before,
 .navbar-b.navbar-trans .nav-link.active:before,
-.navbar-b.navbar-reduce .show>.nav-link:before,
-.navbar-b.navbar-reduce .active>.nav-link:before,
+.navbar-b.navbar-reduce .show > .nav-link:before,
+.navbar-b.navbar-reduce .active > .nav-link:before,
 .navbar-b.navbar-reduce .nav-link.show:before,
 .navbar-b.navbar-reduce .nav-link.active:before {
   width: 35px;
@@ -455,8 +456,8 @@ a:hover {
   color: #fff;
 }
 
-.navbar-b.navbar-trans .show>.nav-link,
-.navbar-b.navbar-trans .active>.nav-link,
+.navbar-b.navbar-trans .show > .nav-link,
+.navbar-b.navbar-trans .active > .nav-link,
 .navbar-b.navbar-trans .nav-link.show,
 .navbar-b.navbar-trans .nav-link.active {
   color: #fff;
@@ -481,8 +482,8 @@ a:hover {
   color: #2C3E50;
 }
 
-.navbar-b.navbar-reduce .show>.nav-link,
-.navbar-b.navbar-reduce .active>.nav-link,
+.navbar-b.navbar-reduce .show > .nav-link,
+.navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
   color: #2C3E50;
@@ -701,14 +702,10 @@ a:hover {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
-  margin: 0 auto 3rem auto;
-  /* Center horizontally */
-  width: fit-content;
-  /* Adjust width to fit the content */
-  text-align: center;
-  /* Center the text inside */
-  font-size: 1rem;
-  /* Ensures a consistent font size across the box */
+  margin: 0 auto 3rem auto; /* Center horizontally */
+  width: fit-content; /* Adjust width to fit the content */
+  text-align: center; /* Center the text inside */
+  font-size: 1rem; /* Ensures a consistent font size across the box */
 }
 
 .service-box:hover .ico-circle {
@@ -721,29 +718,21 @@ a:hover {
 .service-box .service-ico {
   margin-bottom: 1rem;
   color: #1e1e1e;
-  font-size: 4rem;
-  /* Ensures consistent size for icons */
+  font-size: 4rem; /* Ensures consistent size for icons */
 }
 
 .service-box .ico-circle {
   transition: all 500ms ease;
-  font-size: 4rem;
-  /* Matches the size of service-ico for uniformity */
+  font-size: 4rem; /* Matches the size of service-ico for uniformity */
 }
 
 .centered-content {
-  display: flex;
-  /* Use flex for row alignment */
-  flex-direction: row;
-  /* Ensure it's in a horizontal row */
-  justify-content: center;
-  /* Center items horizontally */
-  align-items: center;
-  /* Align items vertically in the center */
-  gap: 10px;
-  /* Add space between elements */
-  text-align: center;
-  /* Center-align text within elements */
+  display: flex; /* Use flex for row alignment */
+  flex-direction: row; /* Ensure it's in a horizontal row */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Align items vertically in the center */
+  gap: 10px; /* Add space between elements */
+  text-align: center; /* Center-align text within elements */
 }
 
 /* Slideshow container */
@@ -757,31 +746,24 @@ a:hover {
 }
 
 .PORTelement-img {
-  position: relative;
+  position:  relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  /* Ensure that the image doesn't overflow the container */
+  overflow: hidden; /* Ensure that the image doesn't overflow the container */
   border-radius: 10px;
 }
 
 .PORTelement-img img {
-  display: block;
-  /* Removes any unwanted inline spacing */
-  width: 200%;
-  /* Make the image fully responsive */
-  height: 200%;
-  /* Ensure the image fills the height of the container */
-  object-fit: contain;
-  /* Ensure the image doesn't overflow and maintains its aspect ratio */
+  display: block; /* Removes any unwanted inline spacing */
+  width: 200%; /* Make the image fully responsive */
+  height: 200%; /* Ensure the image fills the height of the container */
+  object-fit: contain; /* Ensure the image doesn't overflow and maintains its aspect ratio */
   transition: transform 0.5s ease;
-  border-radius: 10px;
-  /* Apply rounded corners directly to the image */
+  border-radius: 10px; /* Apply rounded corners directly to the image */
 }
 
 .PORTelement-img:hover img {
-  transform: scale(1.1);
-  /* Zoom-in effect */
+  transform: scale(1.1); /* Zoom-in effect */
 }
 
 /* Overlay styling */
@@ -797,21 +779,17 @@ a:hover {
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.6);
   transition: opacity 0.5s ease;
-  pointer-events: none;
-  /* Prevent the overlay from interfering with the hover */
+  pointer-events: none; /* Prevent the overlay from interfering with the hover */
 }
 
 .PORTelement-img:hover .PORTelement-overlay {
-  opacity: 1;
-  /* Show overlay on hover */
-  pointer-events: auto;
-  /* Enable interaction if needed */
+  opacity: 1; /* Show overlay on hover */
+  pointer-events: auto; /* Enable interaction if needed */
 }
 
 /* Overlay logo inside */
 .PORTelement-overlay img {
-  max-width: 50%;
-  /* Adjust logo size */
+  max-width: 50%; /* Adjust logo size */
   height: auto;
 }
 
@@ -856,8 +834,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  /* Ensures vertical centering if the container has a set height */
+  height: 100%; /* Ensures vertical centering if the container has a set height */
 }
 
 .counter-ico {
@@ -871,8 +848,7 @@ a:hover {
   box-shadow: 0 0 0 10px #f5dcdc;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* Centers the icon inside the circle */
+  align-items: center; /* Centers the icon inside the circle */
 }
 
 .counter-num .counter {
@@ -1377,25 +1353,5 @@ footer .credits a {
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
-  }
-}
-
-.profile-email {
-  word-break: break-word;
-}
-
-.profile-email {
-  word-break: break-word;
-  font-weight: 400;
-  color: #4e4e4e; 
-  font-size: 1.1rem;
-}
-
-/* Tablet/mobile fix */
-@media (max-width: 991px) {
-  .profile-box {
-    align-items: center;
-    padding-left: 0;
-    text-align: center;
   }
 }
