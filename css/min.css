@@ -1,0 +1,388 @@
+/* === Root Variables === */
+:root {
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --white: #fff;
+    --gray: #6c757d;
+    --blue-dark: #2c3e50;
+    --pink-light: #f8d7da;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* === Reset & Base === */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    color: #212529;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h5 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+/* === Containers & Layout === */
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+[class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 1;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+/* === Navbar === */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0rem 1rem 0rem 1rem;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-right: auto;
+    padding-top: 0;
+    line-height: 1;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    margin-left: auto;
+    align-items: flex-start;
+    padding-top: 0;
+}
+
+.navbar-nav li {
+    margin: 0;
+}
+
+.navbar-nav a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 1;
+    padding-top: 0;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+/* === About Section Card === */
+.box-shadow-full {
+    margin-top: 2rem;
+    background: var(--white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.about-img {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about-img img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 5px;
+}
+
+.about-info p {
+    margin: 0.2rem 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+.title-box {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+/* === Skills Progress Bars === */
+.skill-mf .title-s {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.skill-mf .skill-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.skill-mf .pull-right {
+    float: right;
+    color: #333;
+}
+
+.skill-mf .progress {
+    width: 100%;
+    height: 0.6rem;              /* slightly slimmer bar */
+    background-color: var(--pink-light);
+    border-radius: 0.375rem;
+    margin-bottom: 0.5rem;       /* ⬅️ reduce spacing under each bar */
+    overflow: hidden;
+}
+
+.skill-mf .progress-bar {
+    height: 100%;
+    background-color: var(--blue-dark);
+    transition: width 0.6s ease;
+}
+
+/* === About Text === */
+.about-me .title-left {
+    font-size: 2rem;
+    margin-bottom: 0.1rem;
+    display: inline-block;
+    font-weight: 600; /* Bold heading */
+}
+
+.about-me .lead {
+    font-size: 1.25rem; /* Slightly larger than normal */
+    line-height: 1.8;
+    margin-top: 0.5rem; /* Adjusted for better spacing */
+    margin-bottom: 0.5rem;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 200; /* Regular, not bold */
+    color: #333; /* Slightly softer black */
+}
+
+.about-me a {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem; /* Bigger text for contact */
+    font-weight: 300;
+    color: inherit;
+    margin-bottom: 0.75rem;
+    text-decoration: none;
+}
+
+.about-me a img.contact-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+    object-fit: contain;
+}
+
+.about-me a:hover {
+    color: var(--primary);
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .pt-md-0 {
+        padding-top: 0 !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+/* === Brighter Counter Section === */
+.section-counter {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem 0;
+    height: 420px;
+    display: flex;
+    align-items: center;
+}
+.about-mf {
+    padding-top: 30px;
+}
+
+.section-counter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.section-counter .container {
+    position: relative;
+    z-index: 2;
+}
+
+.counter-box {
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.counter-box .counter-ico {
+    font-size: 2rem;
+    color: #ffffff;
+    opacity: 1;
+    margin-bottom: 1rem;
+}
+
+.counter-box .counter-num .counter {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+}
+
+.counter-box .counter-num .counter-text {
+    font-size: 1rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
